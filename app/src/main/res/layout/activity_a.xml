@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityA"
+    android:orientation="vertical"
+    android:background="@color/paleturquoise">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/activity_a_title"
+        android:gravity="center"
+        android:textColor="@color/darkgrey"
+        android:textSize="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/a_start_b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/activity_b_start"
+                android:background="@drawable/activity_a_button"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/a_start_c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/activity_c_start"
+                android:background="@drawable/activity_a_button"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/a_finish_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/activity_a_finish"
+                android:background="@drawable/activity_a_button"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/a_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/dialog"
+                android:background="@drawable/activity_a_button"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/lifecycle_method_list"
+        android:textColor="@color/darkgrey"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/a_lifecycle_method_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/activity_status"
+        android:textColor="@color/darkgrey"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/a_activity_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>
